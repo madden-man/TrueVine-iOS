@@ -1,0 +1,25 @@
+/* 
+  VoiceOver.strings
+  Rocket.Chat
+
+  Created by Matheus Cardoso on 12/5/17.
+  Copyright © 2017 Rocket.Chat. All rights reserved.
+*/
+
+// MARK: Auth
+"auth.connect.urlfield.label" = "Server URL";
+"auth.connect.urlfield.hint" = "Geben Sie hier die URL Ihres Servers ein.";
+
+"auth.authentication.emailorusername.label" = "E-Mail oder Benutzername";
+"auth.authentication.emailorusername.hint" = "Geben Sie hier Ihre E-Mail-Adresse oder Ihren Benutzernamen ein.";
+"auth.authentication.password.label" = "Passwort";
+"auth.authentication.password.label" = "Geben Sie hier Ihr Passwort ein.";
+
+// MARK: Subscriptions
+"subscriptions.main.userview.label" = "Sitzungsinformationen";
+"subscriptions.main.userview.value" = "Server: %@. Benutzer: %@. Status: %@.";
+"subscriptions.main.userview.hint" = "Klicken Sie doppelt, um den Status zu ändern.";
+
+// MARK: Message
+"message.label" = "Nachricht von %@ in %@.";
+"message.hint" = "Reaktionen: %@";
