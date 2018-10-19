@@ -162,11 +162,15 @@ final class ChatViewController: SLKTextViewController, UITabBarControllerDelegat
         self.navigationController?.pushViewController(newVC, animated:
             true)
     }
+    
+    @objc func buttonAction(sender: UIButton!) {
+        print("Button tapped")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tabBarController = UITabBarController()
+       /* let tabBarController = UITabBarController()
         
         let favoritesVC = UIViewController()
         favoritesVC.title = "favorites"
@@ -189,7 +193,14 @@ final class ChatViewController: SLKTextViewController, UITabBarControllerDelegat
         historyVC.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 2)
         
         let controllers = [favoritesVC, downloadsVC, historyVC]
-        tabBarController.viewControllers = controllers.map { UINavigationController(rootViewController: $0)}
+        tabBarController.viewControllers = controllers.map { UINavigationController(rootViewController: $0)}*/
+        
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+        button.backgroundColor = .green
+        button.setTitle("Test Button", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        
+        self.view.addSubview(button)
         
 
         SocketManager.addConnectionHandler(token: socketHandlerToken, handler: self)
